@@ -1,8 +1,8 @@
 import React from 'react'
 
-function ItemListContainer ()  {
+function ItemListContainer ({titulo})  {
   return (
-    <div>ItemListContainer</div>
+    <div>{titulo}</div>
   )
 }
 
