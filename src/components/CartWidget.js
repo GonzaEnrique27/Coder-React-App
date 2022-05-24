@@ -5,7 +5,7 @@ export const CartWidget = () => {
   return (
     <div className='icon-container'>
     <div className="cart" title="cart" target="_blank"><BsCartPlus/>
-    <span id="cart_menu_num" data-action="cart-can" className="badge rounded-circle">5</span>
+    <span id="cart_menu_num" data-action="cart-can" className="badge rounded-circle">4</span>
   </div>
   </div>
   )
