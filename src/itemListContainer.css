@@ -1,0 +1,43 @@
+.increment{
+    font-size: 60%;
+    position: relative;
+    top: 20vh;
+    margin-right: 5px;
+    background-color: #282c34;
+    border-radius: 8%;
+    color: white;
+    width: 200px;
+    height: 150px;
+    border-color: white;
+}
+
+.decrement{
+    font-size: 60%;
+    position: relative;
+    top: 20vh;
+    margin-left: 5px;
+    background-color: #282c34;
+    border-radius: 8%;
+    color: white;
+    width: 200px;
+    height: 150px;
+    border-color: white;
+}
+
+.cnt-buttons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 300%;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: -15%;
+}
+
+.ctn-fbuttons{
+    font-size: 120%;
+    position: relative;
+    top: 10vh;
+}
