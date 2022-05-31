@@ -15,7 +15,7 @@ const products =[
             "bodyFinish": "Saten",
             "category": "guitar",
             "stock": true,
-            "image": "https://images.musicstore.de/images/1600/gibson-les-paul-standard-60s-bourbon-burst_1_GIT0049494-000.jpg",
+            "image": "./Assets/Img/products/lespaul.svg",
             "description": "La mejor viola de todas"
         },
         {
@@ -32,7 +32,7 @@ const products =[
             "bodyFinish": "Laqueado",
             "category": "guitar",
             "stock": true,
-            "image": "stratocaster.svg",
+            "image": "./Assets/Img/products/stratocaster.svg",
             "description": "La mejor viola de todas"
         },
         {
@@ -49,7 +49,7 @@ const products =[
             "bodyFinish": "Brillante",
             "category": "guitar",
             "stock": true,
-            "image": "jaguar.svg",
+            "image": "./Assets/Img/products/jaguar.svg",
             "description": "La mejor viola de todas"
         },
         {
@@ -66,7 +66,7 @@ const products =[
             "bodyFinish": "Brillante",
             "category": "guitar",
             "stock": true,
-            "image": "gibsonsg.svg",
+            "image": "./Assets/Img/products/gibsonsg.svg",
             "description": "La mejor viola de todas"
         },
         {
@@ -76,7 +76,7 @@ const products =[
             "model": "Slinky Nickel Wound",
             "category": "accesory",
             "price": 100,
-            "image": "cuerdas.svg",
+            "image": "./Assets/Img/products/cuerdas.svg",
             "description": "Cuerdas calibre 0.10 para guitarra electrica",
             "stock": true
         },
@@ -87,7 +87,7 @@ const products =[
             "model": "Profesional",
             "category": "accesory",
             "price": 100,
-            "image": "pluggreen.svg",
+            "image": "./Assets/Img/products/pluggreen.svg",
             "description": "Cable Plug 6 metros profesional para instrumentos electricos",
             "stock": true
         },
@@ -98,7 +98,7 @@ const products =[
             "model": "Profesional",
             "category": "accesory",
             "price": 100,
-            "image": "pluggolden.svg",
+            "image": "./Assets/Img/products/pluggolden.svg",
             "description": "Cable plug 10 metros profesional para instrumentos electricos",
             "stock": true
         },
@@ -109,7 +109,7 @@ const products =[
             "model": "Polytune Mini",
             "category": "accesory",
             "price": 300,
-            "image": "afinador.svg",
+            "image": "./Assets/Img/products/afinador.svg",
             "description": "Afinador Cromatico con pantalla",
             "stock": true
         }
