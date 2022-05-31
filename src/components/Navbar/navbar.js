@@ -1,6 +1,7 @@
-import logo from '../logo.svg';
+import logo from './logo.svg';
 import { BiSearchAlt } from 'react-icons/bi'
-import {CartWidget} from './CartWidget'
+import {CartWidget} from '../CartWidget/CartWidget'
+import './header.css'
 
 function Navbar() {
     return (     
@@ -17,15 +18,15 @@ function Navbar() {
           
           <li>Enlace 2</li>
           <p>|</p>
-          
-          <div>
-            <CartWidget/>
-          </div>
         </ul>
+        <div className='iconos-header'>
+            <CartWidget/>
+          
             
-          <div class="search-box">
+          <div className="search-box">
           <button className="btn-search"><BiSearchAlt/></button>
           <input type="text" className="input-search" placeholder="Buscar..."/>
+      </div>
       </div>
         </header>
     );

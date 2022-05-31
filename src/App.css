@@ -12,8 +12,19 @@ body{
   background-color: #282c34;
 }
 
-@import url("header.css");
-@import url('itemListContainer.css');
+.ctn-navbar{
+  display: flex;
+  justify-content: center;
+}
+.ctn-home{
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  padding-top: 35px
+}
+
+@import url("./components/Navbar/header.css");
+@import url('./components/ItemListContainer/itemListContainer.css');
 
 
 

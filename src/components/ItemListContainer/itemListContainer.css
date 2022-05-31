@@ -1,0 +1,12 @@
+.ctn-products{
+    width: 68%;
+    height: 100%;
+    background-color: white;
+    box-shadow: 10px 5px 5px #797777;
+    border-radius: 30px;
+    margin-left: 43px;
+}
+
+.itm-titulo{
+    padding-left: 7px;
+}
