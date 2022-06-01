@@ -1,9 +1,10 @@
 import Item from "../Item/Item"
+import './itemList.css'
 
 const ItemList = ( {items} ) => {
 
     return (
-        <div>
+        <div className="items-card">
             {
                 items.map((item) => <Item key={item.id} item={item}/>)
             }

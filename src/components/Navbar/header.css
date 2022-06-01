@@ -23,7 +23,7 @@
     width: 10%;
   }
   .logo-e p{
-    font-size: 20px;
+    font-size: 30px;
     padding-bottom: 20px;
     
   
@@ -140,7 +140,7 @@
   header .iconos-header{
     display: flex;
     justify-content: flex-end;
-    width: 30%;
+    width: 80%;
     padding-top: 5px;
   }
   
