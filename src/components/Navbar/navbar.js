@@ -8,7 +8,7 @@ function Navbar() {
         <header className="App-header">
         <div className='logo-e'>
           <img src={logo} className="App-logo" alt="logo" />
-          <p>E-Commerce</p>
+          <p>EGuitar</p>
           </div>
         <ul>
           <p>|</p>

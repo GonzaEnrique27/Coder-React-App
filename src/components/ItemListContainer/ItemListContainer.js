@@ -29,7 +29,7 @@ function ItemListContainer ()  {
      <div className='ctn-products'> 
      <h2 className='itm-titulo'> NUESTROS PRODUCTOS</h2>
      <hr/>
-     <section className="container my-5">
+     <div className="containermy-5">
             
             {
                 loading
@@ -40,7 +40,7 @@ function ItemListContainer ()  {
                 :  <ItemList items={items}/>
             }
             
-        </section>
+        </div>
      
      </div>
      
