@@ -4,17 +4,25 @@ import './itemListContainer.css'
 import {PedirDatos} from '../../Mock/PedisDatos'
 import ItemList from '../ItemList/ItemList'
 import { Spinner } from "react-bootstrap"
+import { useParams } from "react-router-dom"
 
 function ItemListContainer ()  {
   const [items, setItems] = useState([])
   const [loading, setLoading] = useState(true)
+
+  const { categoryId } = useParams()
+  console.log(categoryId)
 
   useEffect(() => {
       setLoading(true)
 
       PedirDatos()
           .then((resp) => {
+              if(!categoryId){
               setItems( resp )
+              }else{
+                  setItems(resp.filter((item)=> item.category === categoryId))
+              }
           })
           .catch((error) => {
               console.log('ERROR', error)
@@ -22,13 +30,11 @@ function ItemListContainer ()  {
           .finally(() => {
               setLoading(false)
           })
-  }, [])
+  }, [categoryId])
   
   
    return (
-     <div className='ctn-products'> 
-     <h2 className='itm-titulo'> NUESTROS PRODUCTOS</h2>
-     <hr/>
+
      <div className="containermy-5">
             
             {
@@ -42,7 +48,6 @@ function ItemListContainer ()  {
             
         </div>
      
-     </div>
      
    )
  }

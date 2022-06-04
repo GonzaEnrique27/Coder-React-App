@@ -1,4 +1,5 @@
 import './item.css'
+import { Link } from "react-router-dom"
 
 const Item = ({item}) => {
 
@@ -12,7 +13,7 @@ const Item = ({item}) => {
           <div className="contentBox">
               <h3>{item.marca} {item.model} </h3>
               <h2 className="price">${item.price}</h2>
-              <a href="#" className="buy">comprar ahora</a>
+              <Link to={`/item/${item.id}`} className="buy">comprar ahora</Link>
           </div> 
         </div>
         </div>
