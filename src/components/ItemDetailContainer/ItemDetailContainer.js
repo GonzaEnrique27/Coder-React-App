@@ -1,35 +1,32 @@
-import React from 'react'
 import { PedirDatos } from "../../Mock/PedisDatos"
 import { useParams } from "react-router-dom"
-import { useEffect } from "react"
-import { useState } from "react"
+import { useEffect, useState} from "react"
 import ItemDetail from "../ItemDetail/ItemDetail"
 import { Spinner } from "react-bootstrap"
 
 export const ItemDetailContainer = () => {
 
-const [item, setItem] = useState(null);
-const [loading, setLoading] = useState(true);
+    const [item, setItem] = useState(null)
+    const [loading, setLoading] = useState(true)
 
-const {itemId} = useParams()
+    const { itemId } = useParams()
+    console.log(itemId)
+    console.log(item)
 
-console.log(itemId)
-console.log(item)
+    useEffect(() => {
+        setLoading(true)
 
-useEffect(() => {
-    setLoading(true)
-
-    PedirDatos()
-        .then((resp) => {
-           setItem( resp.find((item) => item.id === Number(itemId)) )
-        })
-        .catch((error) => {
-            console.log('ERROR', error)
-        })
-        .finally(() => {
-            setLoading(false)
-        })
-}, [])
+        PedirDatos()
+            .then((resp) => {
+               setItem( resp.find((item) => item.id === Number(itemId)) )
+            })
+            .catch((error) => {
+                console.log('ERROR', error)
+            })
+            .finally(() => {
+                setLoading(false)
+            })
+    }, [])
 
 
 

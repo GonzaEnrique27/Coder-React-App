@@ -6,36 +6,40 @@ import ItemList from '../ItemList/ItemList'
 import { Spinner } from "react-bootstrap"
 import { useParams } from "react-router-dom"
 
-function ItemListContainer ()  {
-  const [items, setItems] = useState([])
-  const [loading, setLoading] = useState(true)
+export const ItemListContainer = () => {
 
-  const { categoryId } = useParams()
-  console.log(categoryId)
+    const [items, setItems] = useState([])
+    const [loading, setLoading] = useState(true)
 
-  useEffect(() => {
-      setLoading(true)
 
-      PedirDatos()
-          .then((resp) => {
-              if(!categoryId){
-              setItems( resp )
-              }else{
-                  setItems(resp.filter((item)=> item.category === categoryId))
-              }
-          })
-          .catch((error) => {
-              console.log('ERROR', error)
-          })
-          .finally(() => {
-              setLoading(false)
-          })
-  }, [categoryId])
+    // const params = useParams()
+    const { categoryId } = useParams()
+    console.log(categoryId)
+
+
+    useEffect(() => {
+        setLoading(true)
+
+        PedirDatos()
+            .then((resp) => {
+                if (!categoryId) {
+                    setItems( resp )
+                } else {
+                    setItems( resp.filter((item) => item.categoria === categoryId) )
+                }
+            })
+            .catch((error) => {
+                console.log('ERROR', error)
+            })
+            .finally(() => {
+                setLoading(false)
+            })
+    }, [categoryId])
   
   
    return (
 
-     <div className="containermy-5">
+     <div className="ctn-products">
             
             {
                 loading

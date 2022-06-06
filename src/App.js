@@ -11,14 +11,11 @@ function App() {
      <Navbar/>
      </div>
      
-     <Routes>
-       
-     
+     <Routes>  
      <Route path='/' element= {<div className="ctn-home"><UiSearchSideBar/> <ItemListContainer/></div>}/>
      <Route path='/categorias/:categoryId' element={ <ItemListContainer/>}/>
      <Route path='/item/:itemId' element={<ItemDetailContainer/>} />
      <Route path='*' element={ <Navigate to={"/"} /> } />
-  
      </Routes>
      
      
