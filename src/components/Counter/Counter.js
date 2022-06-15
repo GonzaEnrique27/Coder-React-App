@@ -5,7 +5,7 @@ import './counter.css'
 export const Counter = () => {
 
    
-    const [counter, setCounter] = useState(0)
+    const [counter, setCounter] = useState(1)
    
     
     const handleClick1 = () => {
@@ -18,11 +18,12 @@ export const Counter = () => {
     
     return (
       <div className='cnt-buttons'>
-        <div className='ctn-fbuttons'>
-          {counter}
-        </div>
+        
         <div className="buttons">
         <button className='decrement' onClick={handleClick2}>-</button>
+        
+          <span className=''>{counter}</span>
+        
         <button className='increment' onClick={handleClick1}>+</button> 
         </div>
       </div>

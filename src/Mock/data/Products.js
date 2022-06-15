@@ -13,9 +13,9 @@ const products =[
             "materialBody": "Caoba",
             "materialFretboard": "Palo rosa",
             "bodyFinish": "Saten",
-            "category": "guitar",
+            "category": "1",
             "stock": true,
-            "image": "./Img/products/lespaul.svg",
+            "image": "/Img/products/lespaul.svg",
             "description": "La mejor viola de todas"
         },
         {
@@ -30,9 +30,9 @@ const products =[
             "materialBody": "Aliso",
             "materialFretboard": "Palo rosa",
             "bodyFinish": "Laqueado",
-            "category": "guitar",
+            "category": "1",
             "stock": true,
-            "image": "./Img/products/stratocaster.svg",
+            "image": "/Img/products/stratocaster.svg",
             "description": "La mejor viola de todas"
         },
         {
@@ -47,9 +47,9 @@ const products =[
             "materialBody": "Tilo",
             "materialFretboard": "Palo rosa",
             "bodyFinish": "Brillante",
-            "category": "guitar",
+            "category": "1",
             "stock": true,
-            "image": "./Img/products/jaguar.svg",
+            "image": "/Img/products/jaguar.svg",
             "description": "La mejor viola de todas"
         },
         {
@@ -64,9 +64,9 @@ const products =[
             "materialBody": "Caoba",
             "materialFretboard": "Palo rosa",
             "bodyFinish": "Brillante",
-            "category": "guitar",
+            "category": "1",
             "stock": true,
-            "image": "./Img/products/gibsonsg.svg",
+            "image": "/Img/products/gibsonsg.svg",
             "description": "La mejor viola de todas"
         },
         {
@@ -74,9 +74,9 @@ const products =[
             "name": "Cuerdas Ernie Ball",
             "marca": "Ernie Ball",
             "model": "Slinky Nickel Wound",
-            "category": "accesory",
+            "category": "2",
             "price": 100,
-            "image": "./Img/products/cuerdas.svg",
+            "image": "/Img/products/cuerdas.svg",
             "description": "Cuerdas calibre 0.10 para guitarra electrica",
             "stock": true
         },
@@ -85,9 +85,9 @@ const products =[
             "name": "Plug Green",
             "marca": "Ross",
             "model": "Profesional",
-            "category": "accesory",
+            "category": "2",
             "price": 100,
-            "image": "./Img/products/pluggreen.svg",
+            "image": "/Img/products/pluggreen.svg",
             "description": "Cable Plug 6 metros profesional para instrumentos electricos",
             "stock": true
         },
@@ -96,9 +96,9 @@ const products =[
             "name": "Plug Golden",
             "marca": "Roxtone",
             "model": "Profesional",
-            "category": "accesory",
+            "categoryId": "2",
             "price": 100,
-            "image": "./Img/products/pluggolden.svg",
+            "image": "/Img/products/pluggolden.svg",
             "description": "Cable plug 10 metros profesional para instrumentos electricos",
             "stock": true
         },
@@ -107,9 +107,9 @@ const products =[
             "name": "Pedal Polytune Afinador",
             "marca": "TC Electronic",
             "model": "Polytune Mini",
-            "category": "accesory",
+            "category": "2",
             "price": 300,
-            "image": "./Img/products/afinador.svg",
+            "image": "/Img/products/afinador.svg",
             "description": "Afinador Cromatico con pantalla",
             "stock": true
         }

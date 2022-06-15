@@ -11,19 +11,19 @@ import {Link} from "react-router-dom"
         const handleVolver = () => {
             navigate(-1)
         }
-
+ 
   return (   
 <div className="details-div">
                 <section className="product-view">
                     <h1>{items.name} </h1>
                     <div className="product-view-container">
                         <div className="img-container">
-                        <img src= {items.image} alt= "" />
+                        <img src= {items?.image} alt= "" />
                         </div>
                         <div className="details-description">
                             <div>
                                 <p>
-                                    {items.price} 
+                                    ${items.price} 
                                     <svg width="25" height="21" viewBox="0 0 25 21" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <path
@@ -54,7 +54,7 @@ import {Link} from "react-router-dom"
                             </div>
                             <div className="btns-container">
                                 <div className="btn-container">
-                                    <Link className="btn-container" to="/">
+                                    <Link className="btn-container" to="/cart">
                                         <input className="btn-style" type="button" value="Comprar"/>
                                     </Link>
                                 </div>

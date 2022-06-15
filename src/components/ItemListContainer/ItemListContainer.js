@@ -14,7 +14,6 @@ export const ItemListContainer = () => {
 
     // const params = useParams()
     const { categoryId } = useParams()
-    console.log(categoryId)
 
 
     useEffect(() => {
@@ -25,7 +24,7 @@ export const ItemListContainer = () => {
                 if (!categoryId) {
                     setItems( resp )
                 } else {
-                    setItems( resp.filter((item) => item.categoria === categoryId) )
+                    setItems( resp.filter((item) => item.category === categoryId) )
                 }
             })
             .catch((error) => {
