@@ -13,18 +13,18 @@ export const UiSearchSideBar = () => {
     <p className='envio'>Envio Gratis</p>
     <br/>
     <br/>
-    <label class="switch">
+    <label className="switch">
   <input type="checkbox"/>
-  <span class="slider round"></span>
+  <span className="slider round"></span>
 </label>
 <br/>
 <p className='llegahoy'>Llega Hoy</p>
 <br/>
 <br/>
 
-<label class="switch">
+<label className="switch">
   <input type="checkbox"/>
-  <span class="slider round"></span>
+  <span className="slider round"></span>
 </label>
 
 <br/>

@@ -1,15 +1,30 @@
-import React from 'react'
+import { useContext, useState } from "react"
 import { useNavigate } from "react-router-dom"
+import { CartContext } from '../../Context/CartContext'
 import "./ItemDetail.css"
 import {Link} from "react-router-dom"
+import Counter from "../Counter/Counter"
 
 
     const ItemDetail = ({items}) => {
+
+        const {addItem, isInCart} = useContext (CartContext)
+
+        const [cantidad, setCantidad] = useState(1)
 
         const navigate = useNavigate()
     
         const handleVolver = () => {
             navigate(-1)
+        }
+
+        const handleAgregar = () =>{
+            const itemToCart = {
+                ...items,
+                cantidad
+            }
+
+            addItem(itemToCart)
         }
  
   return (   
@@ -58,10 +73,20 @@ import {Link} from "react-router-dom"
                                         <input className="btn-style" type="button" value="Comprar"/>
                                     </Link>
                                 </div>
+                               
                                 <div className="btn-container">
+                                {isInCart(items.id) ?
                                     <Link className="btn-container" to="/">
                                         <input className="btn-style" type="button" value="Agregar al carrito"/>
-                                    </Link>
+                                    </Link> 
+                                    :
+                                    <Counter 
+                                    max={items.stock}
+                                    counter={cantidad}
+                                    setCounter={setCantidad}
+                                    handleAgregar={handleAgregar}
+                                />
+                                                  }
                                 </div>
                             </div>
 

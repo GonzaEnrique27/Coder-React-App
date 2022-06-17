@@ -14,7 +14,7 @@ const products =[
             "materialFretboard": "Palo rosa",
             "bodyFinish": "Saten",
             "category": "1",
-            "stock": true,
+            "stock": 10,
             "image": "/Img/products/lespaul.svg",
             "description": "La mejor viola de todas"
         },
@@ -31,7 +31,7 @@ const products =[
             "materialFretboard": "Palo rosa",
             "bodyFinish": "Laqueado",
             "category": "1",
-            "stock": true,
+            "stock": 10,
             "image": "/Img/products/stratocaster.svg",
             "description": "La mejor viola de todas"
         },
@@ -48,7 +48,7 @@ const products =[
             "materialFretboard": "Palo rosa",
             "bodyFinish": "Brillante",
             "category": "1",
-            "stock": true,
+            "stock": 10,
             "image": "/Img/products/jaguar.svg",
             "description": "La mejor viola de todas"
         },
@@ -65,7 +65,7 @@ const products =[
             "materialFretboard": "Palo rosa",
             "bodyFinish": "Brillante",
             "category": "1",
-            "stock": true,
+            "stock": 10,
             "image": "/Img/products/gibsonsg.svg",
             "description": "La mejor viola de todas"
         },
@@ -78,7 +78,7 @@ const products =[
             "price": 100,
             "image": "/Img/products/cuerdas.svg",
             "description": "Cuerdas calibre 0.10 para guitarra electrica",
-            "stock": true
+            "stock": 10
         },
         {
             "id": 6,
@@ -89,7 +89,7 @@ const products =[
             "price": 100,
             "image": "/Img/products/pluggreen.svg",
             "description": "Cable Plug 6 metros profesional para instrumentos electricos",
-            "stock": true
+            "stock": 10
         },
         {
             "id": 7,
@@ -100,7 +100,7 @@ const products =[
             "price": 100,
             "image": "/Img/products/pluggolden.svg",
             "description": "Cable plug 10 metros profesional para instrumentos electricos",
-            "stock": true
+            "stock": 10
         },
         {
             "id": 8,
@@ -111,7 +111,7 @@ const products =[
             "price": 300,
             "image": "/Img/products/afinador.svg",
             "description": "Afinador Cromatico con pantalla",
-            "stock": true
+            "stock": 10
         }
     ]
 
