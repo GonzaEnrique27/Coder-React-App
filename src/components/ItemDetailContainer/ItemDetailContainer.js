@@ -1,8 +1,9 @@
-import { PedirDatos } from "../../Mock/PedisDatos"
 import { useParams } from "react-router-dom"
 import { useEffect, useState} from "react"
 import ItemDetail from "../ItemDetail/ItemDetail"
 import { Spinner } from "react-bootstrap"
+import { doc, getDoc } from "firebase/firestore"
+import { db } from "../../firebase/config"
 
 export const ItemDetailContainer = () => {
 
@@ -15,10 +16,13 @@ export const ItemDetailContainer = () => {
 
     useEffect(() => {
         setLoading(true)
+        // 1.- armar la referencia
+        const docRef = doc(db, "123456", itemId)
 
-        PedirDatos()
-            .then((resp) => {
-               setItem( resp.find((item) => item.id === Number(itemId)) )
+
+       getDoc(docRef)     
+            .then((doc) => {
+               setItem( {id: doc.id, ...doc.data()} )
             })
             .catch((error) => {
                 console.log('ERROR', error)
